@@ -1,0 +1,59 @@
+- name: Deploy analytics platform
+  hosts: all
+  become: yes
+  vars:
+    project_dir: /opt/analytics_platform
+    venv_dir: "{{ project_dir }}/venv"
+  tasks:
+    - name: Ensure required apt packages
+      apt:
+        name:
+          - python3.12
+          - python3.12-venv
+          - python3.12-dev
+          - python3-pip
+          - rabbitmq-server
+          - postgresql
+          - postgresql-contrib
+          - git
+        state: present
+        update_cache: yes
+
+    - name: Create project directory
+      file:
+        path: "{{ project_dir }}"
+        state: directory
+        owner: "{{ ansible_user }}"
+        mode: "0755"
+
+    - name: Clone repository
+      git:
+        repo: "{{ git_repo_url }}"
+        dest: "{{ project_dir }}"
+        version: "{{ git_branch | default('main') }}"
+
+    - name: Create virtual environment
+      command: python3.12 -m venv "{{ venv_dir }}"
+      args:
+        creates: "{{ venv_dir }}/bin/activate"
+
+    - name: Install Python requirements
+      pip:
+        requirements: "{{ project_dir }}/requirements.txt"
+        virtualenv: "{{ venv_dir }}"
+
+    - name: Copy systemd service file
+      template:
+        src: analytics.service.j2
+        dest: /etc/systemd/system/analytics.service
+        mode: "0644"
+
+    - name: Reload systemd daemon
+      systemd:
+        daemon_reload: yes
+
+    - name: Ensure analytics service is enabled and started
+      systemd:
+        name: analytics.service
+        enabled: yes
+        state: started

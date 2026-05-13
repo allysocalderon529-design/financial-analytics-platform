@@ -1,0 +1,13 @@
+[Unit]
+Description=Analytics Platform Service (fallback)
+After=network.target
+
+[Service]
+User={{ ansible_user }}
+WorkingDirectory={{ project_dir }}
+Environment="PATH={{ venv_dir }}/bin"
+ExecStart={{ venv_dir }}/bin/python {{ project_dir }}/run_integration.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

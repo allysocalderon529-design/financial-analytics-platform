@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env
+.env.*
+
+# VSCode
+.vscode/
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Ansible
+ansible_deploy.yml
+
+# GitHub Actions workflow (keep, but ignore logs)
+.github/workflows/*.yml
+
+# Misc
+*.log
+*.tmp
