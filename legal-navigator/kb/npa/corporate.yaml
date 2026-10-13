@@ -1,0 +1,136 @@
+# Бизнес / корпоратив
+- id: gk-rf-1
+  kind: Кодекс
+  number: 51-ФЗ
+  date: 1994-11-30
+  title: Гражданский кодекс Российской Федерации (часть первая)
+  domains: [corporate, invest-gov, construction, it-ai]
+  triggers: []
+  base: true
+  category: law
+  notes: Юрлица, сделки, обязательства, вещные права. Часть вторая (14-ФЗ от 26.01.1996) — договоры.
+  verified: null
+
+- id: fz-129-2001
+  kind: ФЗ
+  number: 129-ФЗ
+  date: 2001-08-08
+  title: О государственной регистрации юридических лиц и индивидуальных предпринимателей
+  domains: [corporate]
+  triggers: [new-entity]
+  base: false
+  category: permits
+  verified: null
+
+- id: fz-14-1998
+  kind: ФЗ
+  number: 14-ФЗ
+  date: 1998-02-08
+  title: Об обществах с ограниченной ответственностью
+  domains: [corporate]
+  triggers: [llc]
+  base: false
+  category: law
+  verified: null
+
+- id: fz-208-1995
+  kind: ФЗ
+  number: 208-ФЗ
+  date: 1995-12-26
+  title: Об акционерных обществах
+  domains: [corporate]
+  triggers: [jsc]
+  base: false
+  category: law
+  verified: null
+
+- id: fz-173-2003
+  kind: ФЗ
+  number: 173-ФЗ
+  date: 2003-12-10
+  title: О валютном регулировании и валютном контроле
+  domains: [corporate]
+  triggers: [currency-ops, foreign-investor]
+  base: false
+  category: law
+  notes: Плюс указы о специальных экономических мерах (с 2022 г.) — сверять действующие.
+  verified: null
+
+- id: fz-115-2001
+  kind: ФЗ
+  number: 115-ФЗ
+  date: 2001-08-07
+  title: О противодействии легализации (отмыванию) доходов, полученных преступным путем, и финансированию терроризма
+  domains: [corporate]
+  triggers: [aml]
+  base: false
+  category: law
+  verified: null
+
+- id: fz-135-2006
+  kind: ФЗ
+  number: 135-ФЗ
+  date: 2006-07-26
+  title: О защите конкуренции
+  domains: [corporate, invest-gov]
+  triggers: [antimonopoly, budget-funds]
+  base: false
+  category: permits
+  notes: Согласование сделок с ФАС, государственные и муниципальные преференции.
+  verified: null
+
+- id: fz-99-2011
+  kind: ФЗ
+  number: 99-ФЗ
+  date: 2011-05-04
+  title: О лицензировании отдельных видов деятельности
+  domains: [corporate]
+  triggers: [licensed-activity]
+  base: false
+  category: permits
+  verified: null
+
+- id: tk-rf
+  kind: Кодекс
+  number: 197-ФЗ
+  date: 2001-12-30
+  title: Трудовой кодекс Российской Федерации
+  domains: [corporate]
+  triggers: [employees]
+  base: false
+  category: law
+  notes: Для районов Крайнего Севера — гл. 50 ТК РФ и Закон РФ 4520-1 от 19.02.1993 о гарантиях и компенсациях.
+  verified: null
+
+- id: fz-248-2020
+  kind: ФЗ
+  number: 248-ФЗ
+  date: 2020-07-31
+  title: О государственном контроле (надзоре) и муниципальном контроле в Российской Федерации
+  domains: [corporate]
+  triggers: [state-control]
+  base: false
+  category: law
+  verified: null
+
+- id: fz-127-2002
+  kind: ФЗ
+  number: 127-ФЗ
+  date: 2002-10-26
+  title: О несостоятельности (банкротстве)
+  domains: [corporate]
+  triggers: [insolvency]
+  base: false
+  category: law
+  verified: null
+
+- id: fz-402-2011
+  kind: ФЗ
+  number: 402-ФЗ
+  date: 2011-12-06
+  title: О бухгалтерском учете
+  domains: [corporate]
+  triggers: [new-entity]
+  base: false
+  category: law
+  verified: null
