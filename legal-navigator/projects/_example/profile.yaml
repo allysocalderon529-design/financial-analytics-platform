@@ -1,0 +1,22 @@
+# Пример профиля. Скопируй в projects/<имя>/profile.yaml и заполни.
+name: Пример — логистический терминал на Чукотке
+question: >
+  Какие права на землю оформить под терминал, какие разрешения нужны на строительство
+  и какие налоговые преференции доступны инвестору.
+stage: ТЭО
+region: "87"          # код субъекта РФ, ищется файл kb/regions/87-*.yaml
+municipality: null
+initiator: ООО
+domains:
+  - invest-gov
+  - construction
+  - corporate
+flags:
+  - capital-investment
+  - arctic
+  - dfo
+  - land
+  - capital-construction
+  - eco-impact
+  - llc
+  - employees

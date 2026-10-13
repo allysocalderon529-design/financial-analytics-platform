@@ -1,0 +1,190 @@
+# Инвест / гос-проекты. Схема записи — см. scripts/validate_kb.py (REQUIRED_FIELDS).
+# verified: дата последней сверки редакции в первоисточнике (YYYY-MM-DD) или null.
+- id: fz-39-1999
+  kind: ФЗ
+  number: 39-ФЗ
+  date: 1999-02-25
+  title: Об инвестиционной деятельности в Российской Федерации, осуществляемой в форме капитальных вложений
+  domains: [invest-gov]
+  triggers: [capital-investment]
+  base: true
+  category: law
+  notes: Права и гарантии инвесторов, формы господдержки инвестдеятельности.
+  verified: null
+
+- id: fz-224-2015
+  kind: ФЗ
+  number: 224-ФЗ
+  date: 2015-07-13
+  title: О государственно-частном партнерстве, муниципально-частном партнерстве в Российской Федерации
+  domains: [invest-gov]
+  triggers: [gchp]
+  base: false
+  category: law
+  notes: Порядок подготовки, оценки эффективности и заключения соглашений о ГЧП/МЧП.
+  verified: null
+
+- id: fz-115-2005
+  kind: ФЗ
+  number: 115-ФЗ
+  date: 2005-07-21
+  title: О концессионных соглашениях
+  domains: [invest-gov]
+  triggers: [concession]
+  base: false
+  category: law
+  notes: Объекты концессии, частная концессионная инициатива, конкурс.
+  verified: null
+
+- id: fz-69-2020
+  kind: ФЗ
+  number: 69-ФЗ
+  date: 2020-04-01
+  title: О защите и поощрении капиталовложений в Российской Федерации
+  domains: [invest-gov]
+  triggers: [szpk]
+  base: false
+  category: support
+  notes: СЗПК — стабилизационная оговорка, возмещение затрат на инфраструктуру.
+  verified: null
+
+- id: fz-44-2013
+  kind: ФЗ
+  number: 44-ФЗ
+  date: 2013-04-05
+  title: О контрактной системе в сфере закупок товаров, работ, услуг для обеспечения государственных и муниципальных нужд
+  domains: [invest-gov]
+  triggers: [gov-procurement]
+  base: false
+  category: law
+  verified: null
+
+- id: fz-223-2011
+  kind: ФЗ
+  number: 223-ФЗ
+  date: 2011-07-18
+  title: О закупках товаров, работ, услуг отдельными видами юридических лиц
+  domains: [invest-gov, corporate]
+  triggers: [corp-procurement]
+  base: false
+  category: law
+  verified: null
+
+- id: bk-rf
+  kind: Кодекс
+  number: 145-ФЗ
+  date: 1998-07-31
+  title: Бюджетный кодекс Российской Федерации
+  domains: [invest-gov]
+  triggers: [budget-funds]
+  base: false
+  category: law
+  notes: Субсидии юрлицам и ИП (ст. 78), бюджетные инвестиции; далее — правила предоставления конкретной субсидии.
+  verified: null
+
+- id: fz-160-1999
+  kind: ФЗ
+  number: 160-ФЗ
+  date: 1999-07-09
+  title: Об иностранных инвестициях в Российской Федерации
+  domains: [invest-gov, corporate]
+  triggers: [foreign-investor]
+  base: false
+  category: law
+  verified: null
+
+- id: fz-57-2008
+  kind: ФЗ
+  number: 57-ФЗ
+  date: 2008-04-29
+  title: О порядке осуществления иностранных инвестиций в хозяйственные общества, имеющие стратегическое значение для обеспечения обороны страны и безопасности государства
+  domains: [invest-gov, corporate]
+  triggers: [strategic-sector]
+  base: false
+  category: permits
+  notes: Предварительное согласование сделок Правкомиссией.
+  verified: null
+
+- id: fz-488-2014
+  kind: ФЗ
+  number: 488-ФЗ
+  date: 2014-12-31
+  title: О промышленной политике в Российской Федерации
+  domains: [invest-gov]
+  triggers: [industrial]
+  base: false
+  category: support
+  notes: СПИК, ФРП, промпарки и индустриальные кластеры.
+  verified: null
+
+- id: fz-209-2007
+  kind: ФЗ
+  number: 209-ФЗ
+  date: 2007-07-24
+  title: О развитии малого и среднего предпринимательства в Российской Федерации
+  domains: [invest-gov, corporate]
+  triggers: [msp]
+  base: false
+  category: support
+  verified: null
+
+# --- Территории ---
+- id: fz-193-2020
+  kind: ФЗ
+  number: 193-ФЗ
+  date: 2020-07-13
+  title: О государственной поддержке предпринимательской деятельности в Арктической зоне Российской Федерации
+  domains: [invest-gov]
+  triggers: [arctic]
+  base: false
+  category: support
+  notes: Статус резидента АЗРФ, налоговые и страховые преференции.
+  verified: null
+
+- id: fz-473-2014
+  kind: ФЗ
+  number: 473-ФЗ
+  date: 2014-12-29
+  title: О территориях опережающего развития в Российской Федерации
+  domains: [invest-gov]
+  triggers: [tor]
+  base: false
+  category: support
+  notes: "Допущение: наименование закона менялось (ранее «...опережающего социально-экономического развития...»), сверить актуальное."
+  verified: null
+
+- id: fz-212-2015
+  kind: ФЗ
+  number: 212-ФЗ
+  date: 2015-07-13
+  title: О свободном порте Владивосток
+  domains: [invest-gov]
+  triggers: [free-port]
+  base: false
+  category: support
+  notes: Перечень муниципальных образований в составе СПВ сверять по ст. 4 актуальной редакции.
+  verified: null
+
+- id: fz-119-2016
+  kind: ФЗ
+  number: 119-ФЗ
+  date: 2016-05-01
+  title: Об особенностях предоставления гражданам земельных участков, находящихся в государственной или муниципальной собственности и расположенных в Арктической зоне Российской Федерации и на других территориях Северо-Востока, Сибири и Дальнего Востока Российской Федерации, и о внесении изменений в отдельные законодательные акты Российской Федерации
+  domains: [invest-gov, construction]
+  triggers: [dv-hectare]
+  base: false
+  category: support
+  notes: "«Дальневосточный / Арктический гектар». Допущение: полное наименование сверить."
+  verified: null
+
+- id: nk-rf
+  kind: Кодекс
+  number: 146-ФЗ / 117-ФЗ
+  date: 1998-07-31
+  title: Налоговый кодекс Российской Федерации (часть первая и часть вторая)
+  domains: [invest-gov, corporate]
+  triggers: [capital-investment, arctic, tor, free-port, szpk, industrial]
+  base: true
+  category: support
+  notes: Пониженные ставки налога на прибыль, НДПИ, налога на имущество для резидентов особых режимов; дата — часть первая (часть вторая 117-ФЗ от 05.08.2000).
+  verified: null

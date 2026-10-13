@@ -1,0 +1,130 @@
+# Стройка / инфраструктура
+- id: grk-rf
+  kind: Кодекс
+  number: 190-ФЗ
+  date: 2004-12-29
+  title: Градостроительный кодекс Российской Федерации
+  domains: [construction]
+  triggers: [capital-construction, land]
+  base: true
+  category: permits
+  notes: ГПЗУ, инженерные изыскания, экспертиза проектной документации, разрешение на строительство и на ввод.
+  verified: null
+
+- id: zk-rf
+  kind: Кодекс
+  number: 136-ФЗ
+  date: 2001-10-25
+  title: Земельный кодекс Российской Федерации
+  domains: [construction, invest-gov]
+  triggers: [land]
+  base: true
+  category: law
+  notes: Предоставление участков без торгов (в т.ч. под масштабные инвестпроекты), аренда, сервитут, категории земель.
+  verified: null
+
+- id: fz-384-2009
+  kind: ФЗ
+  number: 384-ФЗ
+  date: 2009-12-30
+  title: Технический регламент о безопасности зданий и сооружений
+  domains: [construction]
+  triggers: [capital-construction]
+  base: false
+  category: law
+  notes: Перечни обязательных СП определяются постановлениями Правительства — сверять актуальный.
+  verified: null
+
+- id: pp-87-2008
+  kind: ПП РФ
+  number: "87"
+  date: 2008-02-16
+  title: О составе разделов проектной документации и требованиях к их содержанию
+  domains: [construction]
+  triggers: [capital-construction]
+  base: false
+  category: law
+  verified: null
+
+- id: fz-7-2002
+  kind: ФЗ
+  number: 7-ФЗ
+  date: 2002-01-10
+  title: Об охране окружающей среды
+  domains: [construction]
+  triggers: [eco-impact, hazardous-facility, subsoil]
+  base: false
+  category: permits
+  notes: Категории объектов НВОС, КЭР/декларация, ОВОС.
+  verified: null
+
+- id: fz-174-1995
+  kind: ФЗ
+  number: 174-ФЗ
+  date: 1995-11-23
+  title: Об экологической экспертизе
+  domains: [construction]
+  triggers: [eco-impact]
+  base: false
+  category: permits
+  notes: Для Арктической зоны и особо охраняемых территорий — проверить расширенные основания ГЭЭ.
+  verified: null
+
+- id: fz-116-1997
+  kind: ФЗ
+  number: 116-ФЗ
+  date: 1997-07-21
+  title: О промышленной безопасности опасных производственных объектов
+  domains: [construction]
+  triggers: [hazardous-facility]
+  base: false
+  category: permits
+  notes: Регистрация ОПО, экспертиза промбезопасности, лицензирование эксплуатации.
+  verified: null
+
+- id: fz-73-2002
+  kind: ФЗ
+  number: 73-ФЗ
+  date: 2002-06-25
+  title: Об объектах культурного наследия (памятниках истории и культуры) народов Российской Федерации
+  domains: [construction]
+  triggers: [cultural-heritage, land]
+  base: false
+  category: permits
+  notes: Историко-культурная экспертиза земельного участка до работ.
+  verified: null
+
+- id: fz-214-2004
+  kind: ФЗ
+  number: 214-ФЗ
+  date: 2004-12-30
+  title: Об участии в долевом строительстве многоквартирных домов и иных объектов недвижимости и о внесении изменений в некоторые законодательные акты Российской Федерации
+  domains: [construction]
+  triggers: [shared-construction]
+  base: false
+  category: law
+  notes: Эскроу-счета, требования к застройщику.
+  verified: null
+
+- id: zakon-2395-1-1992
+  kind: Закон РФ
+  number: 2395-1
+  date: 1992-02-21
+  title: О недрах
+  domains: [construction, invest-gov]
+  triggers: [subsoil]
+  base: false
+  category: permits
+  notes: Лицензия на пользование недрами; при иностранном участии — связка с 57-ФЗ.
+  verified: null
+
+- id: fz-218-2015
+  kind: ФЗ
+  number: 218-ФЗ
+  date: 2015-07-13
+  title: О государственной регистрации недвижимости
+  domains: [construction]
+  triggers: [land, capital-construction]
+  base: false
+  category: law
+  verified: null

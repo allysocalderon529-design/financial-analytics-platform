@@ -1,0 +1,104 @@
+# IT / AI-продукты
+- id: fz-149-2006
+  kind: ФЗ
+  number: 149-ФЗ
+  date: 2006-07-27
+  title: Об информации, информационных технологиях и о защите информации
+  domains: [it-ai]
+  triggers: [information-systems, ai-system]
+  base: true
+  category: law
+  verified: null
+
+- id: fz-152-2006
+  kind: ФЗ
+  number: 152-ФЗ
+  date: 2006-07-27
+  title: О персональных данных
+  domains: [it-ai]
+  triggers: [personal-data, ai-system, b2c]
+  base: false
+  category: permits
+  notes: Уведомление РКН, локализация (ч. 5 ст. 18), трансграничная передача, согласия, оборотные штрафы — проверить актуальную редакцию КоАП.
+  verified: null
+
+- id: fz-187-2017
+  kind: ФЗ
+  number: 187-ФЗ
+  date: 2017-07-26
+  title: О безопасности критической информационной инфраструктуры Российской Федерации
+  domains: [it-ai]
+  triggers: [kii]
+  base: false
+  category: permits
+  notes: Категорирование объектов КИИ, требования к ПО/ПАК.
+  verified: null
+
+- id: fz-63-2011
+  kind: ФЗ
+  number: 63-ФЗ
+  date: 2011-04-06
+  title: Об электронной подписи
+  domains: [it-ai, corporate]
+  triggers: [e-signature]
+  base: false
+  category: law
+  verified: null
+
+- id: gk-rf-4
+  kind: Кодекс
+  number: 230-ФЗ
+  date: 2006-12-18
+  title: Гражданский кодекс Российской Федерации (часть четвертая)
+  domains: [it-ai, corporate]
+  triggers: [ip-software, ai-system]
+  base: false
+  category: law
+  notes: Программы для ЭВМ и БД, служебные произведения, лицензионные договоры, отчуждение прав.
+  verified: null
+
+- id: fz-258-2020
+  kind: ФЗ
+  number: 258-ФЗ
+  date: 2020-07-31
+  title: Об экспериментальных правовых режимах в сфере цифровых инноваций в Российской Федерации
+  domains: [it-ai]
+  triggers: [exp-legal-regime, ai-system]
+  base: false
+  category: support
+  verified: null
+
+- id: ukaz-490-2019
+  kind: Указ Президента РФ
+  number: "490"
+  date: 2019-10-10
+  title: О развитии искусственного интеллекта в Российской Федерации (Национальная стратегия развития ИИ)
+  domains: [it-ai]
+  triggers: [ai-system]
+  base: false
+  category: law
+  notes: Стратегический документ, не регулятор; ред. 2024 г. — сверить. Отдельно отслеживать проекты закона о регулировании ИИ.
+  verified: null
+
+- id: zozpp-2300-1-1992
+  kind: Закон РФ
+  number: 2300-1
+  date: 1992-02-07
+  title: О защите прав потребителей
+  domains: [it-ai, corporate]
+  triggers: [b2c]
+  base: false
+  category: law
+  verified: null
+
+- id: fz-38-2006
+  kind: ФЗ
+  number: 38-ФЗ
+  date: 2006-03-13
+  title: О рекламе
+  domains: [it-ai, corporate]
+  triggers: [advertising]
+  base: false
+  category: law
+  notes: Маркировка интернет-рекламы (ст. 18.1).
+  verified: null
